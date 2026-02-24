@@ -1,0 +1,58 @@
+{% extends 'polls/base.html' %}
+{% block content %}
+
+<!-- 🌟 Hero Section -->
+<div class="text-center mb-5">
+  <h1 class="display-5 fw-bold">Welcome to PollPulse 🗳️</h1>
+  <p class="lead text-muted">Create polls. Vote honestly. See transparent results. Engage your audience like never before!</p>
+  {% if not user.is_authenticated %}
+    <a href="{% url 'register' %}" class="btn btn-primary btn-lg mt-3 me-2">Get Started</a>
+    <a href="{% url 'login' %}" class="btn btn-outline-secondary btn-lg mt-3">Login</a>
+  {% endif %}
+</div>
+
+<!-- ⚡ Feature Cards -->
+<div class="row g-4">
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body text-center">
+        <h5 class="card-title">Create Engaging Polls</h5>
+        <p class="card-text">Whether you're an admin or teacher, create polls with multiple options, schedules, and images.</p>
+        {% if user.is_authenticated and user.is_superuser %}
+        <a href="{% url 'poll_create' %}" class="btn btn-primary">Create Poll</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body text-center">
+        <h5 class="card-title">Vote with a Click</h5>
+        <p class="card-text">Users can view available polls and vote once. Your choice counts — instantly!</p>
+        {% if user.is_authenticated %}
+        <a href="{% url 'poll_list' %}" class="btn btn-success">Vote Now</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body text-center">
+        <h5 class="card-title">View Real-Time Results</h5>
+        <p class="card-text">See live voting results with charts and voter insights — transparent and up to date.</p>
+        {% if user.is_authenticated %}
+        <a href="{% url 'poll_list' %}" class="btn btn-info">View Results</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🚀 Optional Footer CTA -->
+<div class="text-center mt-5">
+  <p class="text-muted">Built for fairness. Powered by Django. Designed for all.</p>
+</div>
+
+{% endblock %}
