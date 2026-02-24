@@ -1,20 +1,16 @@
+\## Project Screenshots
 
 
 
+!\[Screenshot](img.png)
 
-\## UI Snapshots
+!\[Screenshot](img\_1.png)
 
+!\[Screenshot](img\_2.png)
 
+!\[Screenshot](img\_3.png)
 
-!\[UI Snapshot](img.png)
+!\[Screenshot](img\_4.png)
 
-!\[UI Snapshot](img\_1.png)
-
-!\[UI Snapshot](img\_2.png)
-
-!\[UI Snapshot](img\_3.png)
-
-!\[UI Snapshot](img\_4.png)
-
-!\[UI Snapshot](img\_5.png)
+!\[Screenshot](img\_5.png)
 
