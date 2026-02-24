@@ -1,4 +1,4 @@
-\# PollPulse
+
 
 
 
@@ -17,6 +17,4 @@
 !\[UI Snapshot](img\_4.png)
 
 !\[UI Snapshot](img\_5.png)
-
-
 
