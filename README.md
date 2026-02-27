@@ -58,12 +58,12 @@ PollPulse is a dynamic online polling system built with Django that allows users
 
 ## 🖼️ UI Snapshots
 
-![img.png](pollpulse_env/img.png)   
-![img_1.png](pollpulse_env/img_1.png)  
-![img_2.png](pollpulse_env/img_2.png)  
-![img_3.png](pollpulse_env/img_3.png)  
-![img_4.png](pollpulse_env/img_4.png)  
-![img_5.png](pollpulse_env/img_5.png)
+![img.png](img.png)   
+![img_1.png](img_1.png)  
+![img_2.png](img_2.png)  
+![img_3.png](img_3.png)  
+![img_4.png](img_4.png)  
+![img_5.png](img_5.png)
 
 ---
 
